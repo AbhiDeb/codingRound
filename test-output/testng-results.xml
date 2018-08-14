@@ -2,20 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19707" started-at="2018-08-11T16:50:47Z" finished-at="2018-08-11T16:51:07Z">
+  <suite name="Default suite" duration-ms="10994" started-at="2018-08-14T04:47:35Z" finished-at="2018-08-14T04:47:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19707" started-at="2018-08-11T16:50:47Z" finished-at="2018-08-11T16:51:07Z">
-      <class name="SignInTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SignInTest@51565ec2]" name="beforeMethod" is-config="true" duration-ms="3042" started-at="2018-08-11T22:20:47Z" finished-at="2018-08-11T22:20:50Z">
+    <test name="Default test" duration-ms="10994" started-at="2018-08-14T04:47:35Z" finished-at="2018-08-14T04:47:46Z">
+      <class name="test.SignInTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SignInTest@4b9e13df]" name="setUp" is-config="true" duration-ms="165" started-at="2018-08-14T10:17:34Z" finished-at="2018-08-14T10:17:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.SignInTest@4b9e13df]" name="beforeMethod" is-config="true" duration-ms="8278" started-at="2018-08-14T10:17:35Z" finished-at="2018-08-14T10:17:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.SignInTest.shouldThrowAnErrorIfSignInDetailsAreMissing()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:SignInTest@51565ec2]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="16650" started-at="2018-08-11T22:20:50Z" finished-at="2018-08-11T22:21:07Z">
+        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:test.SignInTest@4b9e13df]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="1949" started-at="2018-08-14T10:17:43Z" finished-at="2018-08-14T10:17:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-      </class> <!-- SignInTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.SignInTest@4b9e13df]" name="afterMethod" is-config="true" duration-ms="756" started-at="2018-08-14T10:17:45Z" finished-at="2018-08-14T10:17:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldThrowAnErrorIfSignInDetailsAreMissing status=SUCCESS method=SignInTest.shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:test.SignInTest@4b9e13df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.SignInTest@4b9e13df]" name="endReport" is-config="true" duration-ms="201" started-at="2018-08-14T10:17:46Z" finished-at="2018-08-14T10:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- test.SignInTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

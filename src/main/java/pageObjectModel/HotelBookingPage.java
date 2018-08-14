@@ -16,6 +16,9 @@ public class HotelBookingPage {
 
 	@FindBy(id = "SearchHotelsButton")
 	public WebElement searchButton;
+	
+	@FindBy(className = "searchSummary")
+	public WebElement searchSummayDiv;
 
 	@FindBy(id = "travellersOnhome")
 	public WebElement travellerSelection;
