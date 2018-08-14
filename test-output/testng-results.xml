@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10994" started-at="2018-08-14T04:47:35Z" finished-at="2018-08-14T04:47:46Z">
+  <suite name="Suite" duration-ms="42854" started-at="2018-08-14T06:02:49Z" finished-at="2018-08-14T06:03:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10994" started-at="2018-08-14T04:47:35Z" finished-at="2018-08-14T04:47:46Z">
-      <class name="test.SignInTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SignInTest@4b9e13df]" name="setUp" is-config="true" duration-ms="165" started-at="2018-08-14T10:17:34Z" finished-at="2018-08-14T10:17:35Z">
+    <test name="Test" duration-ms="42854" started-at="2018-08-14T06:02:49Z" finished-at="2018-08-14T06:03:32Z">
+      <class name="test.FlightBookingTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.FlightBookingTest@7382f612]" name="setUp" is-config="true" duration-ms="160" started-at="2018-08-14T11:32:49Z" finished-at="2018-08-14T11:32:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.SignInTest@4b9e13df]" name="beforeMethod" is-config="true" duration-ms="8278" started-at="2018-08-14T10:17:35Z" finished-at="2018-08-14T10:17:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.HotelBookingTest@7a7b0070]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-14T11:32:49Z" finished-at="2018-08-14T11:32:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.SignInTest@1055e4af]" name="setUp" is-config="true" duration-ms="0" started-at="2018-08-14T11:32:49Z" finished-at="2018-08-14T11:32:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.FlightBookingTest@7382f612]" name="beforeMethod" is-config="true" duration-ms="6419" started-at="2018-08-14T11:33:00Z" finished-at="2018-08-14T11:33:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.FlightBookingTest.testThatResultsAppearForAOneWayJourney()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:test.FlightBookingTest@7382f612]" name="testThatResultsAppearForAOneWayJourney" duration-ms="6016" started-at="2018-08-14T11:33:06Z" finished-at="2018-08-14T11:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.FlightBookingTest@7382f612]" name="afterMethod" is-config="true" duration-ms="1760" started-at="2018-08-14T11:33:12Z" finished-at="2018-08-14T11:33:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testThatResultsAppearForAOneWayJourney status=SUCCESS method=FlightBookingTest.testThatResultsAppearForAOneWayJourney()[pri:0, instance:test.FlightBookingTest@7382f612] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.FlightBookingTest@7382f612]" name="endReport" is-config="true" duration-ms="200" started-at="2018-08-14T11:33:32Z" finished-at="2018-08-14T11:33:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.HotelBookingTest@7a7b0070]" name="endReport" is-config="true" duration-ms="40" started-at="2018-08-14T11:33:32Z" finished-at="2018-08-14T11:33:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:test.SignInTest@1055e4af]" name="endReport" is-config="true" duration-ms="38" started-at="2018-08-14T11:33:32Z" finished-at="2018-08-14T11:33:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- test.FlightBookingTest -->
+      <class name="test.SignInTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.SignInTest@1055e4af]" name="beforeMethod" is-config="true" duration-ms="8784" started-at="2018-08-14T11:32:49Z" finished-at="2018-08-14T11:32:58Z">
           <params>
             <param index="0">
               <value>
@@ -22,26 +70,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:test.SignInTest@4b9e13df]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="1949" started-at="2018-08-14T10:17:43Z" finished-at="2018-08-14T10:17:45Z">
+        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:test.SignInTest@1055e4af]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="1141" started-at="2018-08-14T11:32:58Z" finished-at="2018-08-14T11:32:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.SignInTest@4b9e13df]" name="afterMethod" is-config="true" duration-ms="756" started-at="2018-08-14T10:17:45Z" finished-at="2018-08-14T10:17:46Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.SignInTest@1055e4af]" name="afterMethod" is-config="true" duration-ms="733" started-at="2018-08-14T11:32:59Z" finished-at="2018-08-14T11:33:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=shouldThrowAnErrorIfSignInDetailsAreMissing status=SUCCESS method=SignInTest.shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:test.SignInTest@4b9e13df] output={null}]]]>
+                <![CDATA[[TestResult name=shouldThrowAnErrorIfSignInDetailsAreMissing status=SUCCESS method=SignInTest.shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:test.SignInTest@1055e4af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:test.SignInTest@4b9e13df]" name="endReport" is-config="true" duration-ms="201" started-at="2018-08-14T10:17:46Z" finished-at="2018-08-14T10:17:46Z">
+      </class> <!-- test.SignInTest -->
+      <class name="test.HotelBookingTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.HotelBookingTest@7a7b0070]" name="beforeMethod" is-config="true" duration-ms="10133" started-at="2018-08-14T11:33:14Z" finished-at="2018-08-14T11:33:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.HotelBookingTest.shouldBeAbleToSearchForHotels()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- test.SignInTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="shouldBeAbleToSearchForHotels()[pri:0, instance:test.HotelBookingTest@7a7b0070]" name="shouldBeAbleToSearchForHotels" duration-ms="7119" started-at="2018-08-14T11:33:24Z" finished-at="2018-08-14T11:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldBeAbleToSearchForHotels -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.HotelBookingTest@7a7b0070]" name="afterMethod" is-config="true" duration-ms="739" started-at="2018-08-14T11:33:31Z" finished-at="2018-08-14T11:33:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldBeAbleToSearchForHotels status=SUCCESS method=HotelBookingTest.shouldBeAbleToSearchForHotels()[pri:0, instance:test.HotelBookingTest@7a7b0070] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.HotelBookingTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

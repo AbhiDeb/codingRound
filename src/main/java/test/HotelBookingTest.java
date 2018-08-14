@@ -47,7 +47,7 @@ public class HotelBookingTest {
 		GenericFunctions.setDriverPath();
 
 		// Extent Report changes
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReport.html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReports/"+this.getClass().getName().replace("test.", "")+"_ExtentReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		InetAddress addr;
@@ -64,7 +64,7 @@ public class HotelBookingTest {
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 
 		htmlReporter.config().setDocumentTitle("TestVagarant Coding Round");
-		htmlReporter.config().setReportName("TestVagarant Coding Round");
+		htmlReporter.config().setReportName(this.getClass().getName().replace("test.", ""));
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 		htmlReporter.config().setTheme(Theme.STANDARD);
 	}
